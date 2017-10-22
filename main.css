@@ -5,17 +5,17 @@ body {
 
 .header {
     text-align: center;
-    font-size: 60px;
+    font-size: 80px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .stats {
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 200px;
     font-family: 'Ubuntu', sans-serif;
     background-color: #ffffff;
-    width: 0;
-    height: 0;
+    width: 100px;
+    height: 100px;
 }
 
 .majorstat {
