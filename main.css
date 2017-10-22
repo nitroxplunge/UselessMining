@@ -14,8 +14,8 @@ body {
     margin-top: 200px;
     font-family: 'Ubuntu', sans-serif;
     background-color: #ffffff;
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: auto;
 }
 
 .majorstat {
