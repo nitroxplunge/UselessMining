@@ -11,7 +11,7 @@ body {
 
 .stats {
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 0px;
     font-family: 'Ubuntu', sans-serif;
     background-color: #303030;
     width: 400px;
@@ -33,8 +33,8 @@ body {
 }
 
 #ondot {
-    font-size: 30px;
-    text-align: right;
+    font-size: 80px;
+    top: 10;
+    right: 10;
     color: red;
-    transform: translate(-10px,-50px);
 }
