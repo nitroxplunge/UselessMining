@@ -35,5 +35,6 @@ body {
 #ondot {
     font-size: 30px;
     text-align: right;
-    transform: translate(0,0);
+    color: red;
+    transform: translate(-10px,-50px);
 }
