@@ -11,12 +11,12 @@ body {
 
 .stats {
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 60px;
     font-family: 'Ubuntu', sans-serif;
     background-color: #303030;
-    width: 600px;
-    height: 400px;
-    padding: 20px;
+    width: 400px;
+    height: 150px;
+    padding: 10px;
 }
 
 .majorstat {
