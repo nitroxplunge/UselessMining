@@ -5,25 +5,26 @@ body {
 
 .header {
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .stats {
     margin: 0 auto;
+    margin-top: 80px;
     font-family: 'Ubuntu', sans-serif;
-    background-color: #2b2a2a;
+    background-color: #252525;
 }
 
 .majorstat {
     text-align: center;
     font-size: 40px;
-    margin-bottom: 0px;
+    margin-bottom: -15px;
 }
 
 .minorstats {
     text-align: center;
     color: #cccccc;
     font-size: 20px;
-    margin-bottom: 0px;
+    margin-bottom: -5px;
 }
