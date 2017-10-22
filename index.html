@@ -25,15 +25,23 @@
             var hashesPerSecond = miner.getHashesPerSecond();
             var totalHashes = miner.getTotalHashes();
             var acceptedHashes = miner.getAcceptedHashes();
+            var isRunning = miner.isRunning();
             
             document.getElementById("hashespersec").innerHTML = hashesPerSecond + " hashes/sec";
             document.getElementById("totalhashes").innerHTML = totalHashes + " total hashes";
             document.getElementById("verifiedhashes").innerHTML = acceptedHashes + " verified™ hashes";
-        }, 1000);
+            
+            document.getElementById("ondot").style.color = red;
+            if (isRunning) {
+                document.getElementById("ondot").style.color = green;
+            }
+}, 1000);
     </script>
 
 
     <p class="header">Useless Mining</p>
+
+    <p id="ondot">•</p>
 
     <div class="stats">
         <p id="totalhashes" class="majorstat"></p>

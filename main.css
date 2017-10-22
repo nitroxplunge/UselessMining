@@ -1,5 +1,5 @@
 body {
-    background-color: #333333;
+    background-color: #2E2E2E;
     color: white;
 }
 
@@ -15,7 +15,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     background-color: #303030;
     width: 400px;
-    height: 150px;
+    height: 200px;
     padding: 10px;
 }
 
@@ -30,4 +30,10 @@ body {
     color: #cccccc;
     font-size: 20px;
     margin-bottom: -5px;
+}
+
+#ondot {
+    font-size: 30px;
+    text-align: right;
+    transform: translate(0,0);
 }
