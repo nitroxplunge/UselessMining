@@ -13,9 +13,10 @@ body {
     margin: 0 auto;
     margin-top: 200px;
     font-family: 'Ubuntu', sans-serif;
-    background-color: #ffffff;
+    background-color: #303030;
     width: 600px;
-    height: 600px;
+    height: 400px;
+    padding: 20px;
 }
 
 .majorstat {
