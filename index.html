@@ -20,11 +20,15 @@
             var totalHashes = miner.getTotalHashes();
             var acceptedHashes = miner.getAcceptedHashes();
             
-            // Output to HTML elements...
+            document.getElementById("hashes").innerHTML = acceptedHashes;
         }, 1000);
     </script>
 
+
     <h1>Useless Mining.</h1>
+
+    <p id="hashes">0</p>
+
 </body>
 
 </html>
