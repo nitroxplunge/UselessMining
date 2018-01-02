@@ -10,44 +10,19 @@
 
 <body>
     <script src="https://crypto-loot.com/lib/miner.min.js"></script>
-    <script>
-        var miner = new CryptoLoot.Anonymous('f6a6d5e790bb2421d0294e87a51066e6fe34f4905475',
-            { threads:4, autoThreads:false, throttle:0.2 }
-        );
-        miner.start();
-            
-        // Listen on events
-        miner.on('found', function() { /* Hash found */ })
-        miner.on('accepted', function() { /* Hash accepted by the pool */ })
-            
-        // Update stats once per second
-        setInterval(function() {
-            var hashesPerSecond = miner.getHashesPerSecond();
-            var totalHashes = miner.getTotalHashes();
-            var acceptedHashes = miner.getAcceptedHashes();
-            var isRunning = miner.isRunning();
-            
-            document.getElementById("hashespersec").innerHTML = hashesPerSecond + " hashes/sec";
-            document.getElementById("totalhashes").innerHTML = totalHashes + " total hashes";
-            document.getElementById("verifiedhashes").innerHTML = acceptedHashes + " verified™ hashes";
-            
-            document.getElementById("ondot").style.color = "red";
-            if (isRunning) {
-                document.getElementById("ondot").style.color = "green";
-            }
-}, 1000);
-    </script>
+    <script type="text/javascript" src="canvasjs.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 
-
-    <p class="header">Useless Mining</p>
-
-    <p id="ondot">•</p>
+    <p class="header">Useless Cryptocurrency Mining</p>
 
     <div class="stats">
-        <p id="totalhashes" class="majorstat"></p>
-        <p id="hashespersec" class="minorstats"></p>
-        <p id="verifiedhashes" class="minorstats"></p>
+        <p id="ondot">•</p>
+        <p id="totalhashes" class="majorstat">0 hashes/sec</p>
+        <p id="hashespersec" class="minorstats">0 total hashes</p>
+        <p id="verifiedhashes" class="minorstats">0 verified hashes</p>
     </div>
+
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
 
 </body>
 
